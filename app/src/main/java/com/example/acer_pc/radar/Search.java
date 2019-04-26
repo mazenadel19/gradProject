@@ -14,6 +14,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.RadioButton;
 import android.widget.Spinner;
 import android.widget.Toast;
 
@@ -27,6 +28,8 @@ public class Search extends AppCompatActivity  implements NavigationView.OnNavig
     private int mSelectedID;        //to remember the activity I'm in
 
     Button searchbtn;
+
+    private Spinner districts_spinner;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,7 +51,7 @@ public class Search extends AppCompatActivity  implements NavigationView.OnNavig
         subcategory.setAdapter(subcategory_adapter);
 
         //DistrictsSpinner
-        Spinner districts_spinner = (Spinner) findViewById(R.id.districtSpinnerID);
+        districts_spinner = (Spinner) findViewById(R.id.districtSpinnerID);
         ArrayAdapter<String> districts_adapter = new ArrayAdapter<String>
                 (Search.this, android.R.layout.simple_list_item_1, getResources().getStringArray(R.array.District));
         districts_adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -83,6 +86,27 @@ public class Search extends AppCompatActivity  implements NavigationView.OnNavig
 
         // show the hamburger icon
         mDrawerToggle.syncState();
+
+    }
+
+    public void disableDistrict(View view){
+        boolean checked =((RadioButton) view).isChecked();
+        switch (view.getId()){
+            case R.id.radioButton:
+                districts_spinner.setEnabled(false);
+                districts_spinner.setClickable(false);
+
+        }
+
+    }
+
+    public void enableDistrict(View view){
+        boolean checked =((RadioButton) view).isChecked();
+        switch (view.getId()){
+            case R.id.radioButton2:
+                districts_spinner.setEnabled(true);
+                districts_spinner.setClickable(true);
+        }
 
     }
 

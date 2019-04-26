@@ -99,7 +99,8 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:text="Buy"
-                        android:layout_marginBottom="10dp"/>
+                        android:layout_marginBottom="10dp"
+                        android:onClick="disableDistrict"/>
 
                     <RadioButton
                         android:id="@+id/radioButton2"
@@ -108,7 +109,8 @@
                         android:layout_weight="1"
                         android:text="Rent"
                         android:layout_marginBottom="10dp"
-                        android:checked="true"/>
+                        android:checked="true"
+                        android:onClick="enableDistrict"/>
                 </RadioGroup>
 
                 <!--District text-->
