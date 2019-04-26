@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ScrollView android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="com.example.acer_pc.radar.SearchOfferDetails"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/relatveLayoutID"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:background="#151515">
+                <ImageView
+                    android:layout_centerInParent="true"
+                    android:layout_width="300dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/d_product_imageID"
+                    android:src="@drawable/car1"
+                    android:layout_gravity="center_vertical"/>
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="5dp"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/d_dummyTitleID"
+                    android:textSize="30sp"
+                    android:gravity="center"
+
+                    android:text="Dummy Title"
+                    android:textColor="#151515"
+                    android:textStyle="bold"
+                    android:background="#e4dfe4"/>
+
+                <GridLayout
+                    android:id="@+id/userInfoID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:columnCount="1"
+                    android:rowCount="8"
+                    android:padding="1dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/d_dummyRegionID"
+                        android:textSize="20sp"
+                        android:layout_marginTop="20dp"
+                        android:text="Dummy Region"
+                        android:layout_gravity="left"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/d_dummyModelID"
+                        android:textSize="20sp"
+                        android:layout_marginTop="20dp"
+                        android:text="Dummy Model"
+                        android:layout_gravity="left"
+                        android:background="#f2f0f2"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/d_dummyStateID"
+                        android:textSize="20sp"
+                        android:layout_marginTop="20dp"
+                        android:text="dummy State"
+                        android:layout_gravity="left"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/d_dummyConditionID"
+                        android:textSize="20sp"
+                        android:layout_marginTop="20dp"
+                        android:text="Dummy Condition"
+                        android:layout_gravity="left"
+                        android:background="#f2f0f2"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/d_dummyTransmissionTypeID"
+                        android:textSize="20sp"
+                        android:layout_marginTop="20dp"
+                        android:text="dummyTransmissionType"
+                        android:layout_gravity="left"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/d_dummyYearID"
+                        android:textSize="20sp"
+                        android:layout_marginTop="20dp"
+                        android:text="Dummy Year"
+                        android:layout_gravity="left"
+                        android:background="#f2f0f2"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/d_dummyKilometersID"
+                        android:textSize="20sp"
+                        android:layout_marginTop="20dp"
+                        android:text="Dummy Kilometers"
+                        android:layout_gravity="left"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/d_dummyPriceID"
+                        android:textSize="28sp"
+                        android:layout_marginTop="20dp"
+                        android:text="Dummy Price"
+                        android:textColor="#151515"
+                        android:layout_gravity="left"
+                        android:textStyle="bold"
+                        android:background="#f2f0f2"/>
+
+
+                </GridLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/d_dummyDescribtionID"
+                    android:textSize="20sp"
+                    android:gravity="start"
+                    android:layout_marginTop="20dp"
+                    android:text="Dummy describtion"
+                    android:textStyle="normal"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/d_dummyNameID"
+                    android:textSize="30sp"
+                    android:textColor="#151515"
+                    android:gravity="center"
+                    android:layout_marginTop="35dp"
+                    android:text="mohamed_01"
+                    android:background="#dedada"
+                    android:onClick="goToUsersProfile"
+                    android:textStyle="italic"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

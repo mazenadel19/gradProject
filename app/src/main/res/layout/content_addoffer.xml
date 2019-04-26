@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/image_btn"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="65dp"
+            android:src="@drawable/upload"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="25dp"
+            android:id="@+id/title_ads"
+            android:layout_below="@+id/image_btn"
+            android:layout_centerHorizontal="true"
+            android:hint="Title"
+            android:background="@drawable/xf"
+            android:textSize="20dp"/>
+
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="25dp"
+            android:id="@+id/category_ads"
+            android:layout_below="@+id/title_ads"
+            android:layout_centerHorizontal="true"
+            android:scrollbarSize="30dp"
+            style="@android:style/Widget.Spinner.DropDown"
+            android:background="@drawable/xf"/>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top|left"
+            android:layout_margin="25dp"
+            android:id="@+id/description"
+            android:layout_below="@+id/category_ads"
+            android:layout_centerHorizontal="true"
+            android:hint="Description"
+            android:background="@drawable/xf"
+            android:textSize="20dp"
+            android:scrollbars="vertical"
+            android:lines="3"/>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="25dp"
+            android:id="@+id/city"
+            android:layout_below="@+id/description"
+            android:layout_centerHorizontal="true"
+            android:scrollbarSize="30dp"
+            style="@android:style/Widget.Spinner.DropDown"
+            android:background="@drawable/xf"/>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="25dp"
+            android:id="@+id/region"
+            android:layout_below="@+id/city"
+            android:layout_centerHorizontal="true"
+            android:scrollbarSize="30dp"
+            style="@android:style/Widget.Spinner.DropDown"
+            android:background="@drawable/xf"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="25dp"
+            android:id="@+id/price"
+            android:layout_below="@+id/region"
+            android:layout_centerHorizontal="true"
+            android:hint="Price"
+            android:background="@drawable/xf"
+            android:textSize="20dp" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Post"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:id="@+id/upload_btn"
+            android:layout_below="@id/price"
+            android:layout_centerHorizontal="true"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="#FFF"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:layout_marginBottom="10dp"/>
+
+
+    </RelativeLayout>
+</ScrollView>

@@ -1,17 +1,207 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+<RelativeLayout
+    android:id="@+id/rlayout"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:weightSum="1">
+    android:background="@color/colorPrimary"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
 
-    <include
-        android:id="@+id/app_barID"
-        layout="@layout/app_bar"/>
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="153dp"
-        android:layout_height="wrap_content"
-        android:text="Register Activity" />
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/register"
+                android:textSize="35sp"
+                android:layout_centerHorizontal="true"
+                android:shadowColor="@color/textShadow"
+                android:layout_marginTop="45dp"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2"/>
 
-</LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="150dp">
+
+                    <!--Name-->
+                    <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/registerUsernameId"
+                        android:hint="Username"
+                        android:inputType="text"
+                        android:layout_marginBottom="20dp">
+                    </EditText>
+                    </android.support.design.widget.TextInputLayout>
+
+                <!--Email-->
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/registerEmailID"
+                        android:hint="Email"
+                        android:inputType="textEmailAddress"
+                        android:layout_marginBottom="20dp">
+                    </EditText>
+                </android.support.design.widget.TextInputLayout>
+
+                    <!--Password-->
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/registerPasswordId"
+                            android:hint="@string/password"
+                            android:inputType="textPassword"
+                            android:layout_marginBottom="20dp">
+                        </EditText>
+                </android.support.design.widget.TextInputLayout>
+
+                    <!--repeatPassword-->
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/registerRepeatPasswordId"
+                            android:hint="Repeat Your Password"
+                            android:inputType="textPassword"
+                            android:layout_marginBottom="20dp">
+                        </EditText>
+                    </android.support.design.widget.TextInputLayout>
+
+
+                        <!--phone-->
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/registerPhoneId"
+                            android:hint="@string/phone"
+                            android:inputType="phone"
+                            android:layout_marginBottom="20dp">
+                        </EditText>
+                    </android.support.design.widget.TextInputLayout>
+
+                    <!--Districts text-->
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/district"
+                        android:textSize="18sp"
+                        android:layout_marginBottom="5dp"/>
+                </android.support.design.widget.TextInputLayout>
+
+
+                    <!--Districts spinner-->
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    <Spinner
+                        android:id="@+id/spinner1Id"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:spinnerMode="dialog">
+                    </Spinner>
+                    </android.support.design.widget.TextInputLayout>  <!--Gender text-->
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Gender"
+                        android:textSize="18sp"
+                        android:layout_marginBottom="5dp"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <!--Gender spinner-->
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <Spinner
+                        android:id="@+id/spinner2Id"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:spinnerMode="dropdown">
+                    </Spinner>
+                </android.support.design.widget.TextInputLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+
+                    <TextView
+                        android:id="@+id/text1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="By Signing Up You Agree To Our "
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_marginBottom="2dp"
+                        android:layout_toRightOf="@+id/text1"
+                        android:id="@+id/condTermsID"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Terms &amp; Conditions"
+                        android:textSize="16sp"
+                        android:onClick="goToTermsConditions"
+                        android:textColor="@color/colorAccent"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+
+                    <!--Next Button-->
+                        <Button
+                            android:id="@+id/nextBtnId"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:onClick="nextBtnFun"
+                            android:text="Register"
+                            android:textColor="@color/colorAccent" />
+
+                </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

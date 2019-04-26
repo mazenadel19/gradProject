@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.acer_pc.radar">
-    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -11,7 +14,14 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name=".MainActivity"
+        <!-- android:label in application changes the app name in the settings -->
+        <!-- android:label in activity changes the app name on the mobile screen -->
+        <!-- android default to set app name = to main activity name and it can be overridden with the setTitle method -->
+
+
+        <!-- Welcome Activity -->
+        <activity
+            android:name=".WelcomeActivity"
             android:label="Renta">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,15 +30,85 @@
             </intent-filter>
         </activity>
 
+        <!-- Main Activity -->
+        <activity
+            android:name=".MainActivity"
+            android:label="Renta">
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+        <!-- intent-filter determine app base activity which it will start from as it's main -->
+        <!-- android:name name of your new activity java class -->
+        <!-- android:label the label changes the Activity name -->
+
+
+        <!-- Splash Screen Activity -->
+        <activity android:name=".splash_screen" />
+
+        <!-- Login Activity -->
         <activity
             android:name=".Login"
-            android:label="Login">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity">
-            </meta-data>
-        </activity>
-        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+            android:label="Login" />
+
+        <!-- Register Activity -->
+        <activity
+            android:name=".Register"
+            android:label="Register" />
+
+        <!-- fb metadata -->
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+
+        <!-- AddOffer Activity -->
+        <activity
+            android:name=".AddOffer"
+            android:label="AddOffer" />
+
+        <!-- Search Activity -->
+        <activity
+            android:name=".Search"
+            android:label="Search" />
+
+        <!-- Chat Activity -->
+        <activity
+            android:name=".Chat"
+            android:label="Chat" />
+
+        <!-- Settings Activity -->
+        <activity
+            android:name=".Settings"
+            android:label="Setting" />
+
+        <!-- ContactUs Activity -->
+        <activity
+            android:name=".ContactUs"
+            android:label="ContactUs" />
+
+        <!-- SubCategory Activity -->
+        <activity android:name=".Sub_Category" />
+
+        <!-- Profile Activity -->
+        <activity android:name=".Profile" />
+        <activity android:name=".SettingsChangeYourUsername" />
+        <activity android:name=".SettingsChangeYourPassword" />
+        <activity android:name=".SettingsChangeYourEmail" />
+        <activity android:name=".SearchResult" />
+        <activity android:name=".SettingsChangeYourPhoneNo" />
+        <activity android:name=".SearchOfferDetails" />
+        <activity android:name=".OtherUsersProfile" />
+        <activity android:name=".RegisterTermsConditions" />
+        <activity android:name=".loginForgotPassword" />
+        <activity android:name=".SettingsChangeYourPersonalInformation" />
+        <activity android:name=".ProfileOfferDetails" />
+        <activity android:name=".OtherUserOfferDetails"></activity>
     </application>
 
 </manifest>

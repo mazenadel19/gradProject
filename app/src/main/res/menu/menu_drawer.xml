@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/group1">
+        <item
+            android:id="@+id/nav_add_offer_id"
+            android:icon="@drawable/ic_menu_add_black_24dp"
+            android:title="@string/add_offer" />
+        <item
+            android:id="@+id/nav_categories_id"
+            android:icon="@drawable/ic_menu_arrow_forward_black_24dp"
+            android:title="@string/categories" />
+        <item
+            android:id="@+id/nav_search_id"
+            android:icon="@drawable/ic_menu_search_black_24dp"
+            android:title="@string/search" />
+        <item
+            android:id="@+id/nav_chat_id"
+            android:icon="@drawable/ic_menu_chat_black_24dp"
+            android:title="@string/chat" />
+        <item
+            android:id="@+id/nav_settings_id"
+            android:icon="@drawable/ic_menu_settings_black_24dp"
+            android:title="@string/settings" />
+    </group>
+
+    <group
+        android:id="@+id/group2">
+        <item android:title="@string/others">
+            <menu>
+                <item
+                    android:id="@+id/nav_contact_us_id"
+                    android:title="@string/contact_us"
+                    android:icon="@drawable/ic_menu_people_black_24dp"
+                    />
+                <item
+                    android:id="@+id/nav_log_out_id"
+                    android:title="@string/logout"
+                    android:icon="@drawable/ic_menu_arrow_back_black_24dp"/>
+            </menu>
+        </item>
+        </group>
+</menu>

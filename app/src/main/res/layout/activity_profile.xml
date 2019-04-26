@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.CoordinatorLayout
+                android:fitsSystemWindows="true"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <android.support.design.widget.AppBarLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="350dp"
+                            android:src="@drawable/back_profile"
+                            android:scaleType="centerCrop"/>
+
+                        <android.support.v7.widget.Toolbar
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:padding="16dp"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:layout_marginBottom="10dp">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/ppID"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:src="@drawable/profile2"
+                                app:border_width="6dp"
+                                app:border_color="#ffffff"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="mohamed_01"
+                                android:textStyle="bold"
+                                android:textSize="20sp"
+                                android:layout_marginTop="8dp"
+                                android:textColor="#ffffff" />
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_place_black_24dp"
+                                    android:tint="#ffffff"
+                                    android:layout_gravity="center"
+                                   />
+
+                                <TextView
+                                    android:id="@+id/districtText"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="District 1"
+                                    android:textStyle="bold"
+                                    android:textSize="20sp"
+                                    android:layout_gravity="center"
+                                    android:textColor="#ffffff"
+                                    android:layout_marginLeft="4dp"/>
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" "
+                                android:textSize="45sp"/>
+
+
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:background="#747171">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/avgRatingTextID"
+                                android:text="Average Rating"
+                                android:textColor="#FFFFFF"
+                                android:layout_gravity="center_vertical"
+                                android:textStyle="bold"
+                                android:textSize="20sp" />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/avgRatingNumber"
+                                android:text="3.5"
+                                android:textSize="50sp"
+                                android:textColor="#ffe100"
+                                android:textStyle="bold"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="38dp"
+                                android:layout_marginStart="38sp"
+                                />
+
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:background="#EEEEEE">
+
+
+                        <GridLayout
+                            android:id="@+id/userInfoID"
+                            android:layout_width="391dp"
+                            android:layout_height="wrap_content"
+                            android:columnCount="2"
+                            android:rowCount="3"
+                            android:padding="16sp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Gender"
+                                android:textColor="#37474f"
+                                android:textStyle="bold"
+                                android:layout_gravity="start"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginLeft="15dp"
+                                android:textSize="18sp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Male"
+                                android:textColor="#37474f"
+                                android:layout_gravity="end"
+                                android:layout_marginEnd="15dp"
+                                android:layout_marginRight="15dp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Date Of Birth"
+                                android:textColor="#37474f"
+                                android:layout_marginTop="15sp"
+                                android:textStyle="bold"
+                                android:layout_gravity="start"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginLeft="15dp"
+                                android:textSize="18sp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="09/01/1991"
+                                android:textColor="#37474f"
+                                android:layout_gravity="end"
+                                android:layout_marginTop="15sp"
+                                android:layout_marginEnd="15dp"
+                                android:layout_marginRight="15dp"/>
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Email"
+                                android:textColor="#37474f"
+                                android:layout_marginTop="15sp"
+                                android:textStyle="bold"
+                                android:layout_gravity="start"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginLeft="15dp"
+                                android:textSize="18sp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="momo35@gmail.com"
+                                android:textColor="#37474f"
+                                android:layout_marginTop="15sp"
+                                android:layout_gravity="end"
+                                android:layout_marginEnd="15dp"
+                                android:layout_marginRight="15dp"/>
+
+                        </GridLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                <ScrollView android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:background="#ffffff">
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="My Offers"
+                                android:textColor="#151515"
+                                android:layout_marginLeft="15sp"
+                                android:layout_marginStart="15sp"
+                                android:textSize="30sp"
+                                android:padding="3dp"
+                                android:textStyle="bold"/>
+
+                            <android.support.v7.widget.RecyclerView
+                                android:id="@+id/myProfileRecyclerViewID"
+                                android:padding="16dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+                            </android.support.v7.widget.RecyclerView>
+
+
+                        </LinearLayout>
+                </ScrollView>
+                    </RelativeLayout>
+
+                </android.support.design.widget.AppBarLayout>
+
+            </android.support.design.widget.CoordinatorLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
